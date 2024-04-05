@@ -37,10 +37,7 @@ function App() {
             isActive={activePlayer === "O"}
           />
         </ol>
-        <GameBoard
-          onSelectSquare={handelSelectSquare}
-          activePlayerSymbol={activePlayer}
-        />
+        <GameBoard onSelectSquare={handelSelectSquare} turns={gameTurns} />
       </div>
       <Log />
     </>
