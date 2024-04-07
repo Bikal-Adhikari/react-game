@@ -84,6 +84,9 @@ function App() {
       };
     });
   };
+
+  console.log("players", players);
+  console.log("Turns", gameTurns);
   return (
     <>
       <Header />
@@ -93,13 +96,13 @@ function App() {
             initialName={PLAYERS.X}
             symbol="X"
             isActive={activePlayer === "X"}
-            onChnageName={handelPlayerName}
+            onChangeName={handelPlayerName}
           />
           <Player
             initialName={PLAYERS.O}
             symbol="O"
             isActive={activePlayer === "O"}
-            onChnageName={handelPlayerName}
+            onChangeName={handelPlayerName}
           />
         </ol>
         {(winner || hasDraw) && (
